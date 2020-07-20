@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
+    
+    private func application(_ application: UIApplication, didReceive notification: UNNotificationRequest) {
+        UIApplication.shared.applicationIconBadgeNumber = 0
+    }
 
     // MARK: UISceneSession Lifecycle
 
